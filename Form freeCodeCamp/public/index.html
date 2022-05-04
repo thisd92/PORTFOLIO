@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container-title">
+        <h1 id="title">Form freeCodeCamp <img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg" id="logo-free"></h1>
+        <p id="description">
+            Form for freeCodeCamp test.
+        </p>
+    </div>
+    <div class="container">
+        <form id="survey-form">
+            <div class="container-form">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="container-form">
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your e-mail" required>
+            </div>
+            <div class="container-form">
+                <label for="age" id="number-label">Age <span>(optional)</span></label>
+                <input type="number" id="number" class="form-control" min="0" max="999" placeholder="Enter your age">
+            </div>
+            <div class="container-form">
+                <label for="language" id="select-label">What are your preferred programming language?</label>
+                <select id="dropdown" class="form-control" required>
+                    <option value="">Select an option...</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="java">Java</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="python">Python</option>
+                    <option value="c#">C#</option>
+                </select>  
+            </div>
+            <div class="container-form">
+                <label for="experience" id="experience-label">Have you an experience in programming?</label>
+                <div class="container-form">
+                    <input type="radio" name="yes-no" value="yes">Yes
+                    <input type="radio" name="yes-no" value="no">No
+                </div>
+            </div>
+            <div class="container-form">
+                <label for="workon" id="workon-label">What would you like to work on?</label>
+                <div class="container-form">
+                    <div class="container-form">
+                        <input type="checkbox" name="work" value="front-end">Front-End
+                    </div>
+                    <div class="container-form">
+                        <input type="checkbox" name="work" value="back-end">Back-End
+                    </div>
+                    <div class="container-form">
+                        <input type="checkbox" name="work" value="fullstack">Fullstack
+                    </div>
+                    <div class="container-form">
+                        <input type="checkbox" name="work" value="support">Support
+                    </div>
+                    <div class="container-form">
+                        <input type="checkbox" name="work" value="tester">Programming Tester
+                    </div>
+                </div>
+            </div>
+            <div class="container-form">
+                <label for="experience" id="experience-label">What would you like to know?</label>
+                <div class="container-form">
+                    <textarea placeholder="Any sugestion?"></textarea>
+                </div>
+            </div>
+            <div class="container-form">
+                <button type="submit" id="submit" class="btn-submit" name="submit">Submit
+            </div>
+        </form>
+    </div>
+</body>
+</html>

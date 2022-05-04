@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<fieldset>
+		<form name="formcalc" method="post" action="">
+			<input type="text" name="visor" id="visor"><br>
+			<input type="button" class="numero" name="n7" id="num7" onclick="calcNum(7)" value="7">
+			<input type="button" class="numero" name="n8"  id="num8" onclick="calcNum(8)" value="8">
+			<input type="button" class="numero" name="n9" id="num9" onclick="calcNum(9)" value="9">
+			<input type="button" class="numero" name="multiplicacao" value="x" onclick="calculo('multiplicacao')">
+			<input type="button" class="numero" name="exponenciacao" value="exp" onclick="calculo('exponenciacao')"><br>
+			<input type="button" class="numero" name="n4" id="num4" onclick="calcNum(4)" value="4">
+			<input type="button" class="numero" name="n5" id="num5" onclick="calcNum(5)" value="5">
+			<input type="button" class="numero" name="n6" id="num6" onclick="calcNum(6)" value="6">
+			<input type="button" class="numero" name="divisao" value=" /" onclick="calculo('divisao')">
+			<input type="button" class="numero" name="inversa" value=" 1/x" onclick="calculo('inversa')"><br>
+			<input type="button" class="numero" name="n1" id="num1" onclick="calcNum(1)" value="1">
+			<input type="button" class="numero" name="n2" id="num2" onclick="calcNum(2)" value="2">
+			<input type="button" class="numero" name="n3" id="num3" onclick="calcNum(3)" value="3">
+			<input type="button" class="numero" name="adicao" value="+" onclick="calculo('adicao')">
+			<input type="button" class="numero" name="raiz" value=" 2√ " onclick="calculo('raiz')"><br>
+			<input type="reset" class="numero" name="limpar" id="limpar" value="c" onclick="limpar()">
+			<input type="button" class="numero" name="n0" id="num0" onclick="calcNum(0)" value="0">
+			<input type="button" class="numero" name="ponto" id="p" value=" ," onclick="calcNum('.')">
+			<input type="button" class="numero" name="subtracao" value=" -" onclick="calculo('subtracao')">
+			<input type="button" class="numero" name="percent" value="  % " onclick="calculo('percent')"><br>
+			<input type="button" class="numero" name="resultado" id="result" onclick="calculo('resultado')" value="=">
+		</form>
+	</fieldset>
+	<script type="text/javascript" src="./assets/js/calc.js">	
+	</script>
+</body>
+</html>

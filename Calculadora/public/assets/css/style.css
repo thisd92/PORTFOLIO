@@ -1,0 +1,17 @@
+fieldset{
+    border: solid black 1px;
+    width: 10%;
+    
+}
+.numero{
+    margin-top: 4px;
+}
+
+#visor{
+    background-color: lightgreen;
+    width: 90%;
+}
+#result{
+    margin-top: 4px;
+    width: 95%;
+}
