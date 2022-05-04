@@ -6,8 +6,9 @@
 
 #header{
   background-color: rgb(247, 247, 247);
+  overflow: hidden;
   position: fixed;
-  display: flex;
+  top: 0;
   width: 100%;
   height: 100px;
 }
