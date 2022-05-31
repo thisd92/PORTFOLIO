@@ -41,7 +41,7 @@ export default function Home() {
         ) : (
           <Form client={client} 
           clientChanged={saveClient}
-          canceled={() => (showTable)} />
+          canceled={showTable} />
         )}
       </Layout>
     </div>
