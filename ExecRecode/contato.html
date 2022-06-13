@@ -6,70 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExecRecode</title>
 
-    <style>
-        #img-forma{
-            width: 450px;
-        }
+    <link rel="stylesheet" href="./css/styles.css">
 
-        #menu{
-            background-color: red;
-            width: 100%;
-        }
-
-        #logo{
-            font-size: 48px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
-    <table id="menu">
-        <tr>
-            <td><a id="logo" href="index.html">
-                <font color="white">Full Stack Eletro</font>
-            </a></td>
-            <td><a href="produtos.html">
-                <font color="white">Produtos</font>
-            </a></td>
-            <td><a href="loja.html">
-                <font color="white">Nossas Lojas</font>
-            </a></td>
-            <td><a href="contato.html">
-                <font color="white">Contatos</font>
-            </a></td>
-        </tr>
-    </table>
-    <h2>
-        <font face="Arial">Contato</font>
-    </h2>
-    <hr>
-    <table border="0" width="100%" cellpadding="20">
-        <tr>
-            <td width="50%" align="center">
-                <img src="./imagens/email.jpg" alt="email" width="40px">
-                <font face="Arial" size="4">contato@fullstackeletro.com</font>
-            </td>
-            <td width="50%" align="center">
-                <img src="./imagens/whatsapp.jpg" alt="whatsapp" width="40px">
-                <font face="Arial" size="4">(11) 99999-9999</font>
-            </td>
-        </tr>
-    </table>
+    <nav id="menu">
+        <a id="logo" href="index.html">Full Stack Eletro</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas Lojas</a>
+        <a href="contato.html">Contatos</a>
+    </nav>
 
-    <form action="">
-        <label for="nome">Nome:</label><br>
-        <input type="text" style="width: 400px;"><br>
-        <label for="msg">Mensagem:</label><br>
-        <textarea name="msg" style="width: 400px;"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
-    <center>
-        <h4>
-            <font face="Arial" color="red">Formas de pagamento</font>
-        </h4>
+    <header>
+        <h2>Contato</h2>
+    </header>
+    <hr>
+
+    <main id="main-contato">
+        <section class="contato">
+            <img src="./imagens/email.jpg" alt="email" width="40px">
+            <font face="Arial" size="4">contato@fullstackeletro.com</font>
+        </section>
+        <section class="contato">
+            <img src="./imagens/whatsapp.jpg" alt="whatsapp" width="40px">
+            <font size="4">(11) 99999-9999</font>
+        </section>
+    </main>
+
+    <div class="form">
+        <form action="">
+            <label for="nome">Nome:</label><br>
+            <input type="text" style="width: 400px;"><br>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="msg" style="width: 400px;"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer id="footer">
+        <h4 id="forma_pagamento">Formas de pagamento</h4>
         <img id="img-forma" src="./imagens/formas-pagamento.png" alt="Formas de pagamento">
-    </center>
+    </footer>
 </body>
 </html>
