@@ -1,29 +1,31 @@
 <template>
-  <button class="button"
+  <button
+    class="button"
     @click="$emit('onCalcClick', label)"
-    :class="{ double, triple, operation }">
-      {{ label }}
+    :class="{ double, triple, operation }"
+  >
+    {{ label }}
   </button>
 </template>
 
 <script>
 export default {
-    props: {
-        label: {},
-        operation: { type: Boolean },
-        double: { type: Boolean },
-        triple: { type: Boolean }
-    }
-}
+  props: {
+    label: {},
+    operation: { type: Boolean },
+    double: { type: Boolean },
+    triple: { type: Boolean },
+  },
+};
 </script>
 
 <style>
-:root{
-    --bg-buton: #f0f0f0;
-    --border-button: solid 1 px #888;
+:root {
+  --bg-buton: #f0f0f0;
+  --border-button: solid 1 px #888;
 }
 
-.buton{
+.buton {
   font-size: 1.4em;
   background-color: var(--bg-buton);
   border: none;
@@ -32,25 +34,24 @@ export default {
   outline: none;
 }
 
-.button:active{
+.button:active {
   background-color: #ccc;
 }
 
-.button.double{
+.button.double {
   grid-column: span 2;
 }
 
-.button.triple{
+.button.triple {
   grid-column: span 3;
 }
 
-.button.operation{
+.button.operation {
   background-color: #fa8231;
-  color: #fff; 
+  color: #fff;
 }
 
-.button.operation:active{
+.button.operation:active {
   background-color: #fa8231cc;
 }
-
 </style>
