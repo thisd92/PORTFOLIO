@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style>
+.display {
+  grid-column: span 4;
+  background-color: #0004;
   .display{
     grid-column: span 4;
     background-color: #0004;
