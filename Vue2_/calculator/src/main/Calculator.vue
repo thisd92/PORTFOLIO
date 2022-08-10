@@ -1,6 +1,6 @@
 <template>
   <div class="calculator">
-      <Display value="0"/>
+      <Display :value="displayValue"/>
       <Button label="AC" triple @onCalcClick="clearMemory" />
       <Button label="/" operation @onCalcClick="setOperation" />
       <Button label="7" @onCalcClick="addDigit" />
@@ -25,16 +25,55 @@
 import Display from "../components/Display";
 import Button from "../components/Button";
 export default {
+    data: function(){
+        return{
+            displayValue: "0",
+            clearDisplay: false,
+            operation: null,
+            values: [0, 0],
+            current: 0
+        }
+    },
     components:{ Button, Display },
     methods:{
         clearMemory(){
-            console.log('Limpar Memória')
+            Object.assing(this.$data, this.$optios.data())
         },
         setOperation(operation){
-            console.log('Operação ' + operation)
+            if(this.current === 0){
+                this.operation = operation
+                this.current = 1
+                this.clearDisplay = true
+            } else{
+                const equals = operation === "="
+                const currentOperation = this.operation
+
+                try{
+                    this.values[0] = eval(
+                        `${this.values[0]} ${currentOperation} ${this.values[1]}`
+                    )
+                } catch(e){
+                    this.$emit('onError', e)
+                }
+            }
         },
         addDigit(n){
-            console.log('Digito ' + n)
+            if(n === "." && this.displayValue.includes(".")){
+                return
+            }
+            const clearDisplay = this.displayValue === " 0"
+                || this.clearDisplay
+            const currentValue = clearDisplay ? "" : this.displayValue
+            const displayValue = currentValue + n
+
+            this.displayValue = displayValue
+            this.clearDisplay = false
+
+            if(n !== "."){
+                const i = this.current
+                const newValue = parseFloat(displayValue)
+                this.values[i] = newValue
+            }
         }
     }
 }
