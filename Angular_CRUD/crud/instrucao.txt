@@ -1,0 +1,9 @@
+npm i -g @angular/cli
+
+ng g c "local onde vai ser criado o component"
+
+https://fonts.google.com/icons?selected=Material+Icons
+
+https://material.io/
+
+https://fonts.google.com/icons?selected=Material+Icons

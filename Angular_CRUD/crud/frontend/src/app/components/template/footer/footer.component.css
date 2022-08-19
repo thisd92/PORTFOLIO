@@ -1,0 +1,19 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.footer > span{
+    font-weight: 300;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer a:visited{
+    color: #fff;
+}

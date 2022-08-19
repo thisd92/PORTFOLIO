@@ -1,0 +1,29 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Caneta BIC Preta",
+            "price": 3.89
+        },
+        {
+            "id": 2,
+            "name": "Notebook Mac Pro",
+            "price": 12000.89
+        },
+        {
+            "id": 3,
+            "name": "Samsung S22 Ultra",
+            "price": 8549.00
+        },
+        {
+            "id": 4,
+            "name": "iPhone 12 Pro",
+            "price": 7019.10
+        },
+        {
+            "id": 5,
+            "name": "Motorola Edge 30 Pro",
+            "price": 5900.00
+        }
+    ]
+}
