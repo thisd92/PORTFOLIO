@@ -1,10 +1,5 @@
-import Vue from 'vue';
-import App from './App.vue'
+import { createApp } from "vue";
+import App from './App';
 
-new Vue({
-    //el: "#app",
-    render: h => h(App)
-    //render(createElement){
-    //    return createElement(App)
-    //}
-}).$mount("#app")
+const app = createApp(App)
+app.mount('#app')
