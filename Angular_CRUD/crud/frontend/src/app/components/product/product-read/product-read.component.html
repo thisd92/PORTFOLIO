@@ -1,0 +1,22 @@
+<table class="mat-elevation-z8">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+        </tr>
+    </tbody>
+</table>
+<mat-paginator #paginator [length]="products?.length" [pageIndex]="0" [pageSize]="10" [pageSizeOptions]="[5, 10, 20]"
+    aria-label="Select page">
+</mat-paginator>
+
+<!--
+    <app-product-table></app-product-table>
+
+-->

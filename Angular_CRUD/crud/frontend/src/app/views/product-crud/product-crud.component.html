@@ -1,6 +1,13 @@
-<button mat-raised-button (click)="navigateToProductCreate()">
-    <i class="material-icons">
-        add
-    </i>
-    Add Produto
-</button>
+<mat-card class="header mat-elevation-z3">
+    <app-product-read></app-product-read>
+    <div>
+        <button color="primary" mat-raised-button (click)="navigateToProductCreate()">
+            <i class="material-icons">
+                add
+            </i>
+            Add Produto
+        </button>
+    </div>
+
+</mat-card>
+

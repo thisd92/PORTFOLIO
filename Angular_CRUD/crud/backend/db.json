@@ -1,29 +1,39 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Caneta BIC Preta",
-            "price": 3.89
-        },
-        {
-            "id": 2,
-            "name": "Notebook Mac Pro",
-            "price": 10829.00
-        },
-        {
-            "id": 3,
-            "name": "Samsung S22 Ultra",
-            "price": 8549.00
-        },
-        {
-            "id": 4,
-            "name": "iPhone 12 Pro",
-            "price": 7019.10
-        },
-        {
-            "id": 5,
-            "name": "Motorola Edge 30 Pro",
-            "price": 5900.00
-        }
-    ]
+  "products": [
+    {
+      "name": "Caneta BIC Preta",
+      "price": 3.89,
+      "id": 1
+    },
+    {
+      "name": "Notebook Mac Pro",
+      "price": 10829,
+      "id": 2
+    },
+    {
+      "name": "Samsung S22 Ultra",
+      "price": 8549,
+      "id": 3
+    },
+    {
+      "name": "iPhone 12 Pro",
+      "price": 7019.1,
+      "id": 4
+    },
+    {
+      "name": "Motorola Edge 30 Pro",
+      "price": 5900,
+      "id": 5
+    },
+    {
+      "name": "TV",
+      "price": "5000.00",
+      "id": 6
+    },
+    {
+      "name": "PC Gamer",
+      "price": "5320.00",
+      "id": 7
+    }
+  ]
 }

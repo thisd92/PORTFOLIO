@@ -18,9 +18,19 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { BlackDirective } from './directives/black.directive';
 import { ForDirective } from './directives/for.directive';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductTableComponent } from './components/product/product-table/product-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -32,7 +42,9 @@ import { ForDirective } from './directives/for.directive';
     ProductCrudComponent,
     BlackDirective,
     ForDirective,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductReadComponent,
+    ProductTableComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +55,14 @@ import { ForDirective } from './directives/for.directive';
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
