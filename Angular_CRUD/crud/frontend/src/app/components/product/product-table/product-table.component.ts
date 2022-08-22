@@ -19,7 +19,7 @@ export class ProductTableComponent implements AfterViewInit {
 
   products!: Product[];
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'name', 'price'];
 
   constructor(private productService: ProductService) {
     this.dataSource = new ProductTableDataSource();

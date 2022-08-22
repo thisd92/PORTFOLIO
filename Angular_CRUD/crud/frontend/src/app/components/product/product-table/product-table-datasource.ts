@@ -9,8 +9,18 @@ import { Product } from '../product.model';
 
 // TODO: replace this with real data from your application
 const DATA: Product[] = [
-  {id: 1, name: 'Teste'},
-  {id: 2, name: 'Teste2'},
+  {id: 1, name: 'Teste', price: 5000},
+  {id: 2, name: 'Teste2', price: 3000},
+  {id: 3, name: 'Teste3', price: 3000},
+  {id: 4, name: 'Teste4', price: 3000},
+  {id: 5, name: 'Teste5', price: 3000},
+  {id: 6, name: 'Teste6', price: 3000},
+  {id: 7, name: 'Teste7', price: 3000},
+  {id: 8, name: 'Teste8', price: 3000},
+  {id: 9, name: 'Teste9', price: 3000},
+  {id: 10, name: 'Teste10', price: 3000},
+  {id: 11, name: 'Teste11', price: 3000},
+  {id: 12, name: 'Teste12', price: 3000},
 ]
 
 /**
@@ -83,6 +93,7 @@ export class ProductTableDataSource extends DataSource<Product> {
       switch (this.sort?.active) {
         case 'name': return compare(a.name, b.name, isAsc);
         case 'id': return compare(+a.id!, +b.id!, isAsc);
+        case 'price': return compare(+a.price!, +b.price!, isAsc);
         default: return 0;
       }
     });
