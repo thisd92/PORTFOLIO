@@ -26,14 +26,9 @@
       "id": 5
     },
     {
-      "name": "TV",
-      "price": "5000.00",
+      "name": "SmartTv Samsung",
+      "price": "8320.00",
       "id": 6
-    },
-    {
-      "name": "PC Gamer",
-      "price": "5320.00",
-      "id": 7
     }
   ]
 }

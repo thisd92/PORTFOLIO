@@ -8,6 +8,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: #fff;
 }
 
+.delete{
+    background-color: #c54e4e;
+    color: #fff;
+}
+
 .white{
     background-color: #fff;
 }
