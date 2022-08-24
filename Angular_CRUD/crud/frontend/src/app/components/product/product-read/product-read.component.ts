@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTable } from '@angular/material/table';
+import { HeaderService } from '../../template/header/header.service';
 
 @Component({
   selector: 'app-product-read',
@@ -27,6 +28,8 @@ export class ProductReadComponent implements OnInit {
     this.productService.read().subscribe(products => {
       this.products = products
     })
+
+    
   }
 
 }
