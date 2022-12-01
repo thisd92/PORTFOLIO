@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  background-color: #f3f3f3;
+}
+
+.img-thumb{
+  min-height: 200px;
+  max-height: 200px;
+}
+
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 95px;
+}
+
+.icon{
+  padding: 3px;
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.white{
+  border-color: #fff;
+}
