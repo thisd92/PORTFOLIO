@@ -1,145 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-  background-color: #aaa;
-  line-height: 1.5;
-  font-size: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-.container{
-  margin-left: 200px;
-  width: 82vw;
-}
-
-ul, li{
-  line-height: 2;
-}
-
-li{
-  display: list-item;
-  text-align: -webkit-match-parent;
-  padding: 5px;
-}
-
-ul{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-
-#navbar ul{
-  height: 88%;
-}
-
-#navbar li:hover{
-  background-color: #ccc;
-}
-
-#navbar li{
-  position: relative;
-  width: 100%;
-  border-top: 1px solid;
-  list-style: none;
-}
-
-#navbar header{
-  text-align: center;
-  font-size: 25px;
-}
-
-#navbar{
-  position: fixed;
-  left: 0;
-  overflow: hidden;
-  border-color: black;
-  border-right: 1px solid;
-  width: 200px;
-  height: 100vh;
-  background-color: #ddd;
-}
-
-a.nav-link{
-  text-decoration: none;
+  font-family: 'Anek Devanagari', sans-serif;
   color: black;
 }
 
-.main-section{
-    border: 1px solid black;
-    width: 100%;
-    padding: 5px;
+body {
+  height: 100%;
 }
 
-section header{
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.container{
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
 }
 
-section li{
-  margin-left: 15px;
+.menu {
+  width: 20%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #cacaca;
+  position: fixed;
+  height: 100%;
 }
 
-p{
-  margin-left: 10px;
-  margin-bottom: 5px;
+.menu h1 {
+  font-size: 1.3rem;
+  padding: 10px;
 }
 
-code{
-  margin-left: 25px;
+#navbar {
+  width: 100%;
 }
 
-.espaco{
-    height: 50px;
+#navbar > ul li {
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
 
-@media only screen and (max-width: 700px) {
+#navbar > ul li:nth-child(1) {
+  border-top: 1px solid black;
+}
+
+li a {
+  text-decoration: none;
+}
+
+#navbar ul li:hover{
+  background-color: #6b6b6b;
+  color: white;
+}
+
+li a:active {
+  color: inherit;
+}
+
+li a:visited {
+  color: inherit;
+}
+
+#main-doc {
+  width: 100%;
+  color: #ececec;
+  margin-left: 20%;
+}
+
+.container-main {
+  width: 100%;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.language:last-child{
+  margin-top: 20px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.language p {
+  font-size: 1.1rem;
+  padding: 5px;
+  text-indent: 1rem;
+}
+
+
+.language ul {
+  list-style-type: disc;
+}
+
+
+.language > ul li {
+  font-size: 1.1rem;
+  text-indent: 2rem;
+}
+
+.language span {
+  font-size: 1rem;
+  margin-left: 75px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #343a40;
+  height: 80px;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
+}
+
+.logo img{
+  width: 80px;
+}
+
+.container-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-social a{
+  padding: 3px;
+}
+
+@media(max-width: 700px){
+  .menu h1 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
   
-  #navbar ul {
-    border: 0.5px solid;
-    height: 100%;
-  }
-    #navbar {
-    background-color: #ddd;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    max-height: 275px;
-    border-bottom: 2px solid;
-  }
-
-  #main-doc {
-    position: relative;
-    margin-left: 0px;
-  }
-
-  .container{
-    display: block;
-    position: relative;
-    top: 270px;
-    margin-left: 0px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
-  }
-
-  code {
-    margin-left: -20px;
-    width: 100%;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
+  .language p {
+    font-size: 1rem;
+    padding: 5px;
+    text-indent: 1rem;
   }
 }
